@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>Consultas</title>
+    <link rel="icon" href="./imagenes/log6.png">
+</head>
+
+<body>
+    
+
+
+    <main id="contenido">
+  
+        <header>
+            <nav>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li  ><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./QuienesSomos.html">¿Quiénes somos?</a></li>
+                <li><a href="./formulario.html">Consultas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        
+                </nav>
+            </header>
+        
+
+
+
+    <h1>Formulario</h1>
+    <p>Complete el formulario y envíenos sus consultas.</p>
+
+    <form>
+        <fieldset>
+        <div class="texto" >   <label  for="txtNombre">Nombre:</label> </div>  
+            <input class="campo" type="text" id="txtNombre" required>
+            <br>
+        
+         <div class="texto"><label for="txtApellido">Apellido:</label></div> 
+            <input  class="campo" id="txtApellido" required>
+            <br>
+
+           <div class="texto"> <label for="telTelefono">Telefono:</label></div>
+            <input class="campo" type="tel" id="telTelefono" maxlength="9" required>
+            <br>
+
+           <div class="texto" id="mail"> <label for="txtMail">Mail:</label></div>
+            <input  class="campo" type="email" id="txtMail" required>
+            <br>
+
+          <div class="texto"><label for="txtDireccion">Direccion:</label></div>
+            <input  class="campo" type="text" id="txtDireccion" min="4" max="200" required>
+            <br>
+
+    
+          <div class="texto" id="motivo"><label for="txtMotivo">Motivo:</label></div> 
+            <input  class="campo" type="text" id="txtMotivo" min="4" max="200" required>
+            <br>
+
+           <div class="texto" id="comentario"> <label for="txtComentario">Comentario:</label></div>
+            <input  class="campo" type="text" id="txtComentario" min="4" max="200" required>
+            <br>
+       <div><input id="enviar" type="submit" value="Enviar"></div>  
+             
+        </fieldset>   
+    </form>
+ 
+    
+   
+
+    </main>
+
+</body>
+
+
+</html>

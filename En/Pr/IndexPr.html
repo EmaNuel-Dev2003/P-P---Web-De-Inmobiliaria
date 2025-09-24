@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssPr/indexPrCss.css">
+    <title>Pastitos&Portland</title>
+    <link rel="icon" href="./imagenes/log6.png">
+</head>
+
+<body>
+
+<div>
+    <figure>
+        <img src="./imagenes/log6.png" id="logo" width="50px"  heigh="50px"   > 
+    </figure>
+</div>
+
+    
+<header>
+    <nav>
+        <ul>
+            <li><a href="IndexPr.html">Início</a></li>
+            <li  ><a href="./catalogoPr.html">Catálogo</a></li>
+            <li><a href="./quienesSomosPr.html">Quem somos</a></li>
+            <li><a href="./FormularioPr.html">Consultas</a></li>
+            <li><a href="contactopPr.html">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div id="carrusel">
+        <a href="#" ><img class="left-arrow" src="./imagenes/Izquierda.png" width="10" height="10"/></a>
+        <a href="#"><img  class="right-arrow"  src="./imagenes/Derecha.png" width="10" height="10"/></a>
+        <div class="carrusel">
+          
+            <div class="product" id="product_0">
+               <a href="./catalogoPr.html#casa1"> <img src="./imagenes/casa1.jpg" width="300px"  heigh="200px"  /></a> 
+               <section class="cuadro" ></section> 
+              <div class="text"><h5>José Ignacio</h5>
+                <p>US$ 165.000</p></div> 
+               
+            </div>
+            <div class="product" id="product_1">
+                <a href="./catalogoPr.html#casa3"><img src="./imagenes/casa3.jpeg" width="300px"  heigh="200px" /></a>              
+                <section class="cuadro" ></section> 
+                <div class="text"> <h5>Chuy</h5>
+                <p> US$ 100.000</p></div>
+            </div>
+            <div class="product" id="product_2">
+                <a href="./catalogoPr.html#casa4"><img src="./imagenes/casa4.jpeg" width="300px"  heigh="200px"  /></a>
+                <section class="cuadro" ></section> 
+                <div class="text"> <h5>Montevideo</h5>
+                <p>US$ 250.000</p></div>
+            </div>
+            <div class="product" id="product_3">
+                <a href="./catalogoPr.html#casa2"> <img src="./imagenes/casa2.jpg" width="300px"  heigh="200px"  /></a>
+                <section class="cuadro" ></section> 
+                <div class="text"> <h5>Maldonado</h5>
+                <p>US$ 175.000</p></div>
+            </div>
+        </div>
+    </div>
+ 
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+var current = 0;
+var imagenes = new Array();
+ 
+$(document).ready(function() {
+    var numImages = 6;
+    if (numImages <= 3) {
+        $('.right-arrow').css('display', 'none');
+        $('.left-arrow').css('display', 'none');
+    }
+ 
+    $('.left-arrow').on('click',function() {
+        if (current > 0) {
+            current = current - 1;
+        } else {
+            current = numImages - 3;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    });
+ 
+    $('.left-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('hover', function() {
+        $(this).css('opacity','0.5');
+    }, function() {
+        $(this).css('opacity','1');
+    });
+ 
+    $('.right-arrow').on('click', function() {
+        if (numImages > current + 3) {
+            current = current+1;
+        } else {
+            current = 0;
+        }
+ 
+        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+ 
+        return false;
+    }); 
+ });
+</script>
+
+
+</html>
