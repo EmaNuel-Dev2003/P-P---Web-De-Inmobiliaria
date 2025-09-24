@@ -1,4 +1,4 @@
-![Logo](./assets/logo_pyp.png)
+
 # P&P: Página Web Inmobiliaria 
 Es un sitio web ilustrativo sencillo que muestra la información de una agencia inmobiliaria. 
 
