@@ -15,6 +15,7 @@ La página web contiene las siguientes secciones:
 - CSS
 
 ## Capturas 
+![Home](./assets/p&p_home.png)
 
 ## Nota
 Este sitio web se realizó con el objetivo de incorporar los conceptos de Usabilidad y Accesibilidad Web, además de aplicar buenas prácticas al trabajar
