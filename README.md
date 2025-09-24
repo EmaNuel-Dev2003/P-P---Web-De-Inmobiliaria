@@ -1,5 +1,5 @@
 
-# P&P: Página Web Inmobiliaria 
+# P&P: Página Web Ilustrativa
 Es un sitio web ilustrativo sencillo que muestra la información de una agencia inmobiliaria. 
 
 ## Contenido 
