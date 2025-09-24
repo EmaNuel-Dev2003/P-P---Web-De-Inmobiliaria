@@ -16,6 +16,9 @@ La página web contiene las siguientes secciones:
 
 ## Capturas 
 ![Home](./assets/p&p_home.png)
+![Catálogo](./assets/p&p_catálogo.png)
+![QuienesSomos](./assets/p&p_quienesSomos.png)
+![Contacto](./assets/p&p_contactos.png)
 
 ## Nota
 Este sitio web se realizó con el objetivo de incorporar los conceptos de Usabilidad y Accesibilidad Web, además de aplicar buenas prácticas al trabajar
