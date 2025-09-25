@@ -21,6 +21,6 @@ La página web contiene las siguientes secciones:
 ![Contacto](./assets/p&p_contactos.png)
 
 ## Nota
-Este sitio web se realizó con el objetivo de incorporar los conceptos de Usabilidad y Accesibilidad Web, además de aplicar buenas prácticas al trabajar
-con los lenguajes de programación HTML, Css y JavaScript.
+Esta página web es un trabajo académico que se realizó con el objetivo de incorporar los conceptos de Usabilidad y Accesibilidad Web, además de aplicar buenas prácticas al trabajar
+con los lenguajes de programación HTML, CSS y JavaScript.
 
